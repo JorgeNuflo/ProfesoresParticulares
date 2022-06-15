@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="shortcut icon" href="../fotos/favicon-logo.png">
+    <title>Particulares</title>
+</head>
+<body  class="contenedor">
+    
+    <header class="header">
+        <img src="../fotos/logo.png" alt="logo" class="logo">
+        <h1 class="titulo">Profesores Particulares</h1>
+    </header>
+    
+    <nav class="navIns">
+        <ul class="navListaPIns">
+            <li class="pag">
+                <a href="../index.html" class="opcion">Inicio</a>
+            </li>
+            <li class="pag">
+                <a href="./primario.html" class="opcion">Primario</a>
+            </li>
+            <li class="pag">
+                <a href="./secundario.html" class="opcion">Secundario</a>
+            </li>
+            <li class="pag">
+                <a href="./terciario.html" class="opcion">Terciario</a>
+            </li>
+            <li class="pag">
+                <a href="./inscripcion.html" class="opcion">Inscribirme</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="mainInscripcion">
+        <h2 class="subtitulo">Inscripción</h2>
+        <p class="formulariot">Completar el formulario para la inscripción</p>
+        <fieldset>
+            <legend>Formulario inscripción</legend>
+            <form action="">
+                <div>
+                    <label for="Nombre">Nombre</label>
+                    <input type="text" name="nombre" placeholder="nombre">
+                </div><br>
+                <div>
+                    <label for="Apellido">Apellido</label>
+                    <input type="text" name="apellido" placeholder="apellido">
+                </div><br>
+                <div>
+                    <label for="email">Mail</label>
+                    <input type="email" name="email" required>
+                </div><br>
+                <div>
+                    <label for="sexo">Genero</label><br>
+                    <input type="radio" name="sexo" value="mujer">Mujer 
+                    <input type="radio" name="sexo" value="hombre">Hombre 
+                    <input type="radio" name="sexo" value="otro">Otro
+                </div><br>
+                <div>
+                    <label for="birth">Fecha de nacimiento</label>
+                    <input name="birth" type="date">
+                </div><br>
+                <div>
+                    <label for="acepta">Acepta terminos y condiciones</label>
+                    <input type="checkbox" name="acepta" value="1">
+                </div><br>
+                <div>
+                    <input type="submit" value="enviar datos">
+                    <input type="reset" value="borrar datos">
+                </div>
+            </form>
+        </fieldset>
+    </main>
+    
+    <footer class="footer">
+        <ul class="contRedes">
+            <li class="redes">
+                <a href="https://www.instagram.com/" target="_blank"><img src="../fotos/instagram-icono.png" alt="instagram" width="40px" class="redesIcon"></a>
+            </li>
+            <li class="redes">
+                <a href="https://www.facebook.com/" target="_blank"><img src="../fotos/facebook-icono.png" alt="facebook" width="40px" class="redesIcon"></a>
+            </li>
+            <li class="redes">
+                <a href="https://www.whatsapp.com/?lang=es" target="_blank"><img src="../fotos/whatsapp-icono.png" alt="whatsapp" width="40px" class="redesIcon"></a>
+            </li>
+        </ul>
+    </footer>
+
+</body>
+</html>

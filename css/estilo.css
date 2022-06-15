@@ -1,0 +1,329 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor{
+    background-color: aliceblue;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(4,1fr);
+    grid-template-areas: 
+    "header header"
+    "nav nav"
+    "main main"
+    "footer footer";
+}
+
+
+/* HEADER */
+
+.header{
+    position: fixed;
+    width: 100%;
+    background-color: rgb(220, 220, 220);
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.logo{
+    width: 150px;
+    padding: 10px;
+}
+.titulo{
+    font-size: 3rem;
+}
+
+
+/* NAV */
+
+.nav{
+    position: fixed;
+    top: 150px;
+    width: 100%;
+    height: auto;
+    background-color: grey;
+    grid-area: nav;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "navListaP navListaP"
+    "categorias navListaS";
+}
+.navListaP,
+.navListaPIns{
+    height: 50px;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+    grid-area: navListaP;
+}
+.pag{
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.opcion{
+    padding: 10px;
+    font-size: 1.2rem;
+    color: black;
+    text-decoration: none;
+}
+.opcion:hover{
+    background-color: black;
+    color: white;
+    border-radius: 10%;
+}
+
+.categorias{
+    height: 100%;
+    background-color: rgb(141, 141, 141);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: categorias;
+}
+.navListaS{
+    height: 100%;
+    background-color: rgb(141, 141, 141);
+    display: flex;
+    justify-content: start;
+    grid-area: navListaS;
+}
+
+/* NAV Inscripcion*/
+.navIns{
+    position: fixed;
+    top: 150px;
+    width: 100%;
+    height: 50px;
+    background-color: grey;
+    grid-area: nav;
+}
+
+
+/* MAIN */
+
+.main{
+    width: 90%;
+    margin: auto;
+    margin-top: 280px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    grid-area: main;
+}
+
+/* MAIN Inicio*/
+.subtitulo{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: underline;
+    padding: 30px 60px;
+    text-align: center;
+}
+.info{
+    padding: 20px;
+    font-style: italic;
+    line-height: 1.5rem;
+}
+
+/* MAIN Primaria-Secundaria-Terciario*/
+section{
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 40px;
+}
+table{
+    width: 600px;
+    height: 200px;
+}
+th{
+    background-color: beige;
+}
+td{
+    padding-left: 5%;
+}
+
+/* MAIN Inscripcion*/
+.mainInscripcion{
+    width: 90%;
+    margin: auto;
+    padding-top: 200px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    grid-area: main;
+}
+.formulariot{
+    padding: 30px 0;
+    text-align: center;
+}
+fieldset{
+    margin: auto;
+    padding: 30px;
+    line-height: 1.2rem;
+}
+
+/* FOOTER*/
+
+.footer{
+    width: 100%;
+    height: 50px;
+    background-color: grey;
+    grid-area: footer;
+}
+.contRedes{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+.redes{
+    padding: 0px 30px;
+    padding-top: 6px;
+}
+.redesIcon{
+    width: 40px;
+    border-radius: 5px;
+}
+
+
+@media screen and (max-width: 768px){
+    /* Header */
+    .logo{
+        width: 100px;
+        padding: 8px;
+    }
+    .titulo{
+        font-size: 1.5rem;
+    }
+
+    /*Nav*/
+    .nav,
+    .navIns{
+        top: 100px;
+        height: auto;         
+    }
+    .navListaP,
+    .navListaPIns{
+        height: auto;
+        flex-wrap: wrap;
+    }
+    .pag{
+        width: 50px;
+    }
+    .opcion{
+        font-size: 0.6rem;
+    }
+    .categorias{
+        font-size: 0.8rem;
+    }
+    .navListaS{
+        height: auto;
+        justify-content: start;
+        flex-wrap: wrap;
+    }
+
+    /*Main*/
+    .main{
+        padding-top: 180px;
+        width: 100%;
+        margin: auto;
+    }
+    
+    /*Main Inicio*/
+    .subtitulo{
+        font-size: 1.3rem;
+    }
+    .info{
+        font-size: 0.8rem;
+    }
+    
+    /*Main Pri-Seg-Ter*/
+    table{
+        width: 320px;
+        margin: auto;
+    }
+    
+    /*Main Inscripcion*/
+    .mainInscripcion{
+        padding-top: 130px;    
+    }
+
+    /*footer*/
+    .footer{
+        height: 32px;
+    }
+    .redes{
+        padding: 0 10px;
+        padding-top: 3px;
+    }
+    .redesIcon{
+        width: 25px;
+    }
+}
+
+
+@media screen and (max-width: 320px){
+       /* Header */
+    .logo{
+        width: 80px;
+        padding: 8px;
+    }
+    .titulo{
+        font-size: 1.3rem;
+    }
+
+    /*Nav*/
+    .nav,
+    .navIns{
+        top: 80px;
+        height: auto;         
+    }
+    .pag{
+        width: 35px;
+    }
+    .opcion{
+        font-size: 0.5rem;
+    }
+    .categorias{
+        font-size: 0.6rem;
+    }
+
+    /*Main*/
+    .main{
+        padding-top: 120px;
+    }
+    
+    /*Main Inicio*/
+    .subtitulo{
+        font-size: 1rem;
+        padding-bottom: 10px;
+    }
+    .info{
+        font-size: 0.6rem;
+        padding-top: 10px;
+    }
+    
+    /*Main Pri-Seg-Ter*/
+    table{
+        width: 250px;
+        margin: auto;
+    }
+    
+    /*Main Inscripcion*/
+    .mainInscripcion{
+        padding-top: 100px;    
+    } 
+}
