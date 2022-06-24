@@ -49,12 +49,12 @@
     height: auto;
     background-color: grey;
     grid-area: nav;
-    display: grid;
+    /*display: grid;
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
     "navListaP navListaP"
-    "categorias navListaS";
+    "categorias navListaS";*/
 }
 .navListaP,
 .navListaPIns{
@@ -287,7 +287,7 @@ fieldset{
 }
 
 
-@media screen and (max-width: 320px){
+@media screen and (max-width: 576px){
        /* Header */
     .logo{
         width: 80px;
