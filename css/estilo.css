@@ -293,11 +293,11 @@ fieldset{
 @media screen and (max-width: 576px){
        /* Header */
     .logo{
-        width: 80px;
+        width: 50px;
         padding: 8px;
     }
     .titulo{
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
 
     /*Nav*/
