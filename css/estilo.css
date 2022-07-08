@@ -32,19 +32,20 @@
     align-items: center;
 }
 .logo{
-    width: 150px;
+    width: 100px;
     padding: 10px;
 }
 .titulo{
-    font-size: 3rem;
+    font-size: 2.2rem;
 }
 
 
 /* NAV */
 
 .nav{
+    background: linear-gradient(to top, grey, white);
     position: fixed;
-    top: 150px;
+    top: 0px;
     width: 100%;
     height: auto;
     background-color: grey;
@@ -60,12 +61,12 @@
 .navListaPIns{
     height: 50px;
     list-style-type: none;
-    display: flex;
+    /*display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     justify-items: center;
     align-items: center;
-    grid-area: navListaP;
+    grid-area: navListaP;*/
 }
 .pag{
     width: 100px;
@@ -117,7 +118,7 @@
 .main{
     width: 90%;
     margin: auto;
-    margin-top: 280px;
+    margin-top: 200px;
     margin-bottom: 60px;
     display: flex;
     flex-direction: column;
@@ -159,11 +160,13 @@ table{
     height: 200px;
 }
 th{
+    width: 200px;
+    text-align: center;
     background-color: beige;
 }
-td{
-    padding-left: 5%;
-}
+/*td{
+    
+}*/
 
 /* MAIN Inscripcion*/
 .mainInscripcion{
@@ -224,7 +227,7 @@ fieldset{
     /*Nav*/
     .nav,
     .navIns{
-        top: 100px;
+        top: 0px;
         height: auto;         
     }
     .navListaP,
@@ -300,9 +303,23 @@ fieldset{
     /*Nav*/
     .nav,
     .navIns{
-        top: 80px;
+        top: 0px;
         height: auto;         
     }
+    
+
+    /*.navbar-toggler{
+        height: 20px;
+        width: 20px;
+    }
+    .navbar-toggler-icon{
+        height: 20px;
+        width: 20px;
+        margin-left: -10px;
+        margin-bottom: 20px;
+    }*/
+
+
     .pag{
         width: 35px;
     }
