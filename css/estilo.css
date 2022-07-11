@@ -116,50 +116,29 @@
         border-radius: 5px; }
 
 @media screen and (max-width: 576px) {
-  /* Header */
-  .logo {
-    width: 50px;
-    padding: 8px; }
-  .titulo {
-    font-size: 1rem; }
-  /*Nav*/
-  .nav,
-  .navIns {
+  .nav {
     top: 0px;
     height: auto; }
-  /*.navbar-toggler{
-     height: 20px;
-     width: 20px;
- }
- .navbar-toggler-icon{
-     height: 20px;
-     width: 20px;
-     margin-left: -10px;
-     margin-bottom: 20px;
- }*/
-  .pag {
-    width: 35px; }
-  .opcion {
-    font-size: 0.5rem; }
-  .categorias {
-    font-size: 0.6rem; }
-  /*Main*/
+    .nav .logo {
+      width: 50px;
+      padding: 8px; }
+    .nav .titulo {
+      font-size: 1rem; }
+    .nav .pag {
+      width: 35px; }
+      .nav .pag .opcion {
+        font-size: 0.5rem; }
   .main {
     padding-top: 120px; }
-  /*Main Inicio*/
-  .subtitulo {
-    font-size: 1rem;
-    padding-bottom: 10px; }
-  .info {
-    font-size: 0.6rem;
-    padding-top: 10px; }
-  /*Main Pri-Seg-Ter*/
-  table {
-    width: 250px;
-    margin: auto; }
-  /*Main Inscripcion*/
-  .mainInscripcion {
-    padding-top: 100px; } }
+    .main .subtitulo {
+      font-size: 1rem;
+      padding-bottom: 10px; }
+    .main .info {
+      font-size: 0.6rem;
+      padding-top: 10px; }
+    .main table {
+      width: 250px;
+      margin: auto; } }
 
 * {
   margin: 0;
