@@ -1,0 +1,24 @@
+.footer{
+    width: 100%;
+    height: 50px;
+    background-color: grey;
+    grid-area: footer;
+
+    .contRedes{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+
+        .redes{
+            padding: 0px 30px;
+            padding-top: 6px;
+
+            .redesIcon{
+                width: 40px;
+                border-radius: 5px;
+            }
+        }
+    }
+}

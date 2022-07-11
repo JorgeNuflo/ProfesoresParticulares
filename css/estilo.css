@@ -1,358 +1,130 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.contenedor{
-    background-color: aliceblue;
-    width: 100%;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(4,1fr);
-    grid-template-areas: 
-    "header header"
-    "nav nav"
-    "main main"
-    "footer footer";
-}
-
-
-/* HEADER */
-
-.header{
-    position: fixed;
-    width: 100%;
-    background: linear-gradient(to top, grey, white);
-    grid-area: header;
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-}
-.logo{
-    width: 100px;
-    padding: 10px;
-}
-.titulo{
-    font-size: 2.2rem;
-}
-
-
-/* NAV */
-
-.nav{
+.header {
+  position: fixed;
+  width: 100%;
+  grid-area: header;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center; }
+  .header .nav {
     background: linear-gradient(to top, grey, white);
     position: fixed;
     top: 0px;
     width: 100%;
     height: auto;
-    background-color: grey;
-    grid-area: nav;
-    /*display: grid;
-    grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-    "navListaP navListaP"
-    "categorias navListaS";*/
-}
-.navListaP,
-.navListaPIns{
-    height: 50px;
-    list-style-type: none;
-    /*display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    justify-items: center;
-    align-items: center;
-    grid-area: navListaP;*/
-}
-.pag{
-    width: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.opcion{
-    padding: 10px;
-    font-size: 1.2rem;
-    color: black;
-    text-decoration: none;
-}
-.opcion:hover{
-    background-color: black;
-    color: white;
-    border-radius: 10%;
-}
-
-.categorias{
-    height: 100%;
-    background-color: rgb(141, 141, 141);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-area: categorias;
-}
-.navListaS{
-    height: 100%;
-    background-color: rgb(141, 141, 141);
-    display: flex;
-    justify-content: start;
-    grid-area: navListaS;
-}
-
-/* NAV Inscripcion*/
-.navIns{
-    position: fixed;
-    top: 150px;
-    width: 100%;
-    height: 50px;
-    background-color: grey;
-    grid-area: nav;
-}
-
-
-/* MAIN */
-
-.main{
-    width: 90%;
-    margin: auto;
-    margin-top: 200px;
-    margin-bottom: 60px;
-    display: flex;
-    flex-direction: column;
-    grid-area: main;
-    animation: transitionIn 0.75s;
-}
-@keyframes transitionIn{
-    from{
-        opacity: 0;
-        transform: rotateX(-10deg)
-    }
-    to{
-        opacity: 1;
-        transform: rotateX(0);
-    }
-}
-
-/* MAIN Inicio*/
-.subtitulo{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-decoration: underline;
-    padding: 30px 60px;
-    text-align: center;
-}
-.info{
-    padding: 20px;
-    font-style: italic;
-    line-height: 1.5rem;
-}
-
-/* MAIN Primaria-Secundaria-Terciario*/
-section{
-    justify-content: center;
-    margin: auto;
-    margin-bottom: 40px;
-}
-table{
-    width: 600px;
-    height: 200px;
-}
-th{
-    width: 200px;
-    text-align: center;
-    background-color: beige;
-}
-/*td{
-    
-}*/
-
-/* MAIN Inscripcion*/
-.mainInscripcion{
-    width: 90%;
-    margin: auto;
-    padding-top: 200px;
-    padding-bottom: 60px;
-    display: flex;
-    flex-direction: column;
-    grid-area: main;
-    animation: transitionIn 0.75s;
-}
-.formulariot{
-    padding: 30px 0;
-    text-align: center;
-}
-fieldset{
-    margin: auto;
-    padding: 30px;
-    line-height: 1.2rem;
-}
-
-/* FOOTER*/
-
-.footer{
-    width: 100%;
-    height: 50px;
-    background-color: grey;
-    grid-area: footer;
-}
-.contRedes{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    list-style-type: none;
-}
-.redes{
-    padding: 0px 30px;
-    padding-top: 6px;
-}
-.redesIcon{
-    width: 40px;
-    border-radius: 5px;
-}
-
-
-@media screen and (max-width: 768px){
-    /* Header */
-    .logo{
+    grid-area: nav; }
+    .header .nav .logo {
+      width: 100px;
+      padding: 10px; }
+    .header .nav .titulo {
+      font-size: 2.2rem; }
+    .header .nav .navListaP {
+      height: 50px;
+      list-style-type: none; }
+      .header .nav .navListaP .pag {
         width: 100px;
-        padding: 8px;
-    }
-    .titulo{
-        font-size: 1.5rem;
-    }
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .header .nav .navListaP .pag .opcion {
+          padding: 10px;
+          font-size: 1.2rem;
+          color: black;
+          text-decoration: none; }
+          .header .nav .navListaP .pag .opcion:hover {
+            background-color: black;
+            color: white;
+            border-radius: 10%; }
 
-    /*Nav*/
-    .nav,
-    .navIns{
-        top: 0px;
-        height: auto;         
-    }
-    .navListaP,
-    .navListaPIns{
-        height: auto;
-        flex-wrap: wrap;
-    }
-    .pag{
-        width: 50px;
-    }
-    .opcion{
-        font-size: 0.6rem;
-    }
-    .categorias{
-        font-size: 0.8rem;
-    }
-    .navListaS{
-        height: auto;
-        justify-content: start;
-        flex-wrap: wrap;
-    }
+.main {
+  width: 90%;
+  margin: auto;
+  margin-top: 200px;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  grid-area: main;
+  animation: transitionIn 0.75s; }
 
-    /*Main*/
-    .main{
-        padding-top: 180px;
-        width: 100%;
-        margin: auto;
-    }
-    
-    /*Main Inicio*/
-    .subtitulo{
-        font-size: 1.3rem;
-    }
-    .info{
-        font-size: 0.8rem;
-    }
-    
-    /*Main Pri-Seg-Ter*/
-    table{
-        width: 320px;
-        margin: auto;
-    }
-    
-    /*Main Inscripcion*/
-    .mainInscripcion{
-        padding-top: 130px;    
-    }
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: rotateX(-10deg); }
+  to {
+    opacity: 1;
+    transform: rotateX(0); } }
+  .main section {
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 40px; }
+    .main section .subtitulo {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      text-decoration: underline;
+      padding: 30px 60px;
+      text-align: center; }
+    .main section .info {
+      padding: 20px;
+      font-style: italic;
+      line-height: 1.5rem; }
+    .main section .tablaPrimero {
+      width: 600px;
+      height: 200px; }
+      .main section .tablaPrimero th {
+        width: 200px;
+        text-align: center;
+        background-color: beige; }
+    .main section .tablaSegundo {
+      width: 600px;
+      height: 200px; }
+      .main section .tablaSegundo th {
+        width: 200px;
+        text-align: center;
+        background-color: rgba(232, 232, 183, 0.859); }
+    .main section .tablaTercero {
+      width: 600px;
+      height: 200px; }
+      .main section .tablaTercero th {
+        width: 200px;
+        text-align: center;
+        background-color: rgba(214, 214, 176, 0.71); }
+    .main section .formulariot {
+      padding: 30px 0;
+      text-align: center; }
+    .main section fieldset {
+      margin: auto;
+      padding: 30px;
+      line-height: 1.2rem; }
+      .main section fieldset div {
+        padding: 10px; }
 
-    /*footer*/
-    .footer{
-        height: 32px;
-    }
-    .redes{
-        padding: 0 10px;
-        padding-top: 3px;
-    }
-    .redesIcon{
-        width: 25px;
-    }
-}
+.footer {
+  width: 100%;
+  height: 50px;
+  background-color: grey;
+  grid-area: footer; }
+  .footer .contRedes {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none; }
+    .footer .contRedes .redes {
+      padding: 0px 30px;
+      padding-top: 6px; }
+      .footer .contRedes .redes .redesIcon {
+        width: 40px;
+        border-radius: 5px; }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-@media screen and (max-width: 576px){
-       /* Header */
-    .logo{
-        width: 50px;
-        padding: 8px;
-    }
-    .titulo{
-        font-size: 1rem;
-    }
-
-    /*Nav*/
-    .nav,
-    .navIns{
-        top: 0px;
-        height: auto;         
-    }
-    
-
-    /*.navbar-toggler{
-        height: 20px;
-        width: 20px;
-    }
-    .navbar-toggler-icon{
-        height: 20px;
-        width: 20px;
-        margin-left: -10px;
-        margin-bottom: 20px;
-    }*/
-
-
-    .pag{
-        width: 35px;
-    }
-    .opcion{
-        font-size: 0.5rem;
-    }
-    .categorias{
-        font-size: 0.6rem;
-    }
-
-    /*Main*/
-    .main{
-        padding-top: 120px;
-    }
-    
-    /*Main Inicio*/
-    .subtitulo{
-        font-size: 1rem;
-        padding-bottom: 10px;
-    }
-    .info{
-        font-size: 0.6rem;
-        padding-top: 10px;
-    }
-    
-    /*Main Pri-Seg-Ter*/
-    table{
-        width: 250px;
-        margin: auto;
-    }
-    
-    /*Main Inscripcion*/
-    .mainInscripcion{
-        padding-top: 100px;    
-    } 
-}
+.contenedor {
+  background-color: aliceblue;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas: "header header" "nav nav" "main main" "footer footer"; }
