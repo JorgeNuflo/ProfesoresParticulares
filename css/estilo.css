@@ -11,7 +11,6 @@
     position: fixed;
     top: 0px;
     width: 100%;
-    height: auto;
     grid-area: nav; }
     .header .nav .logo {
       width: 100px;
@@ -19,7 +18,8 @@
     .header .nav .titulo {
       font-size: 2.2rem; }
     .header .nav .navListaP {
-      height: 50px;
+      height: auto;
+      margin: auto;
       list-style-type: none; }
       .header .nav .navListaP .pag {
         width: 100px;
@@ -35,11 +35,16 @@
             background-color: black;
             color: white;
             border-radius: 10%; }
+        .header .nav .navListaP .pag .dropdown-menu {
+          background-color: #e2e2e2; }
+          .header .nav .navListaP .pag .dropdown-menu .dropdown-item:hover {
+            background-color: black;
+            color: #e2e2e2; }
 
 .main {
   width: 90%;
   margin: auto;
-  margin-top: 200px;
+  margin-top: 150px;
   margin-bottom: 60px;
   display: flex;
   flex-direction: column;
@@ -54,14 +59,15 @@
     opacity: 1;
     transform: rotateX(0); } }
   .main section {
-    justify-content: center;
-    margin: auto;
-    margin-bottom: 40px; }
+    margin: auto; }
     .main section .subtitulo {
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       text-decoration: underline;
       padding: 30px 60px;
       text-align: center; }
+    .main section .foto {
+      width: 100%;
+      border-radius: 1%; }
     .main section .info {
       padding: 20px;
       font-style: italic;
@@ -73,6 +79,8 @@
         width: 200px;
         text-align: center;
         background-color: beige; }
+      .main section .tablaPrimero td {
+        text-align: center; }
     .main section .tablaSegundo {
       width: 600px;
       height: 200px; }
@@ -80,6 +88,8 @@
         width: 200px;
         text-align: center;
         background-color: rgba(232, 232, 183, 0.859); }
+      .main section .tablaSegundo td {
+        text-align: center; }
     .main section .tablaTercero {
       width: 600px;
       height: 200px; }
@@ -87,6 +97,8 @@
         width: 200px;
         text-align: center;
         background-color: rgba(214, 214, 176, 0.71); }
+      .main section .tablaTercero td {
+        text-align: center; }
     .main section .formulariot {
       padding: 30px 0;
       text-align: center; }
@@ -116,29 +128,46 @@
         border-radius: 5px; }
 
 @media screen and (max-width: 576px) {
-  .nav {
+  .header .nav {
     top: 0px;
     height: auto; }
-    .nav .logo {
+    .header .nav .logo {
       width: 50px;
       padding: 8px; }
-    .nav .titulo {
+    .header .nav .titulo {
       font-size: 1rem; }
-    .nav .pag {
+    .header .nav .navListaP .pag {
+      margin: auto;
       width: 35px; }
-      .nav .pag .opcion {
-        font-size: 0.5rem; }
+      .header .nav .navListaP .pag .opcion {
+        font-size: 1rem; }
   .main {
-    padding-top: 120px; }
-    .main .subtitulo {
+    margin-top: 50px; }
+    .main section .subtitulo {
       font-size: 1rem;
       padding-bottom: 10px; }
-    .main .info {
+    .main section .info {
       font-size: 0.6rem;
       padding-top: 10px; }
-    .main table {
+    .main section .tablaPrimero {
       width: 250px;
-      margin: auto; } }
+      height: 130px; }
+    .main section .tablaSegundo {
+      width: 250px;
+      height: 130px; }
+    .main section .tablaTercero {
+      width: 250px;
+      height: 130px; }
+  .footer {
+    height: 25px; }
+    .footer .contRedes {
+      padding-left: 0px; }
+      .footer .contRedes .redes {
+        padding: 10px;
+        padding-top: 0px; }
+        .footer .contRedes .redes .redesIcon {
+          width: 15px;
+          border-radius: 5px; } }
 
 * {
   margin: 0;
@@ -146,7 +175,7 @@
   box-sizing: border-box; }
 
 .contenedor {
-  background-color: aliceblue;
+  background-color: rgba(238, 238, 238, 0.762);
   width: 100%;
   height: 100vh;
   display: grid;

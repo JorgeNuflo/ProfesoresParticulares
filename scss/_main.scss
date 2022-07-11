@@ -1,18 +1,21 @@
 @mixin colort ($color) {
     width: 600px;
-            height: 200px;
+    height: 200px;
 
-            th{
-                width: 200px;
-                text-align: center;
-                background-color: $color;
-            }
+        th{
+            width: 200px;
+            text-align: center;
+            background-color: $color;
+        }
+        td{
+            text-align: center;
+        }
 }
 
 .main{
     width: 90%;
     margin: auto;
-    margin-top: 200px;
+    margin-top: 150px;
     margin-bottom: 60px;
     display: flex;
     flex-direction: column;
@@ -31,15 +34,16 @@
     }
 
     section{
-        justify-content: center;
         margin: auto;
-        margin-bottom: 40px;
-
         .subtitulo{
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             text-decoration: underline;
             padding: 30px 60px;
             text-align: center;
+        }
+        .foto{
+            width: 100%;
+            border-radius: 1%;
         }
         .info{
             padding: 20px;

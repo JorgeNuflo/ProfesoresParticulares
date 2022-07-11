@@ -1,40 +1,76 @@
 
 
 @media screen and (max-width: 576px){
-    .nav{
-       top: 0px;
-       height: auto;
+    .header{
+        .nav{
+            top: 0px;
+            height: auto;
      
-        .logo{
-        width: 50px;
-        padding: 8px;
-        }
-        .titulo{
-        font-size: 1rem;
-        }
-        .pag{
-        width: 35px;
-
-            .opcion{
-            font-size: 0.5rem;
+            .logo{
+                width: 50px;
+                padding: 8px;
             }
-        } 
-    }
-     
-    .main{
-     padding-top: 120px;
+            .titulo{
+                font-size: 1rem;
+            }
+            .navListaP{
+                .pag{
+                    margin: auto;
+                    width: 35px;
 
-        .subtitulo{
-        font-size: 1rem;
-        padding-bottom: 10px;
+                    .opcion{
+                        font-size: 1rem;
+                    }
+                }
+            } 
         }
-        .info{
-        font-size: 0.6rem;
-        padding-top: 10px;
-        }
-        table{
+            
+    }
+    
+    @mixin tamanio {
         width: 250px;
-        margin: auto;
+        height: 130px;
+        
+    }
+    .main{
+        margin-top: 50px;
+
+        section{
+            .subtitulo{
+                font-size: 1rem;
+                padding-bottom: 10px;
+            }
+            .info{
+                font-size: 0.6rem;
+                padding-top: 10px;
+            }
+            .tablaPrimero{
+                @include tamanio
+            }
+            .tablaSegundo{
+                @include tamanio
+            }
+            .tablaTercero{
+                @include tamanio
+            }
+        }
+    }
+
+    .footer{
+        height: 25px;
+
+        .contRedes{
+            padding-left: 0px;
+
+            .redes{
+                padding: 10px;
+                padding-top: 0px;
+
+                .redesIcon{
+                    width: 15px;
+                    border-radius: 5px;
+                }
+            }
         }
     }
 }   
