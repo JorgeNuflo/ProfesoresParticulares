@@ -8,7 +8,7 @@
     align-items: center;
 
     .nav{
-        background: $colorp;
+        background: $colorPrincipal;
         position: fixed;
         top: 0px;
         width: 100%;
@@ -28,6 +28,7 @@
             list-style-type: none;
 
             .pag{
+                margin: 5px;
                 width: 100px;
                 display: flex;
                 justify-content: center;

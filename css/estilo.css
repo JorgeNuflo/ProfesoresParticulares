@@ -22,6 +22,7 @@
       margin: auto;
       list-style-type: none; }
       .header .nav .navListaP .pag {
+        margin: 5px;
         width: 100px;
         display: flex;
         justify-content: center;
@@ -71,43 +72,57 @@
     .main section .info {
       padding: 20px;
       font-style: italic;
-      line-height: 1.5rem; }
+      font-size: 1.2rem;
+      line-height: 2rem; }
     .main section .tablaPrimero {
       width: 600px;
-      height: 200px; }
+      height: auto; }
       .main section .tablaPrimero th {
+        height: 50px;
         width: 200px;
         text-align: center;
         background-color: beige; }
       .main section .tablaPrimero td {
+        height: 50px;
         text-align: center; }
     .main section .tablaSegundo {
       width: 600px;
-      height: 200px; }
+      height: auto; }
       .main section .tablaSegundo th {
+        height: 50px;
         width: 200px;
         text-align: center;
         background-color: rgba(232, 232, 183, 0.859); }
       .main section .tablaSegundo td {
+        height: 50px;
         text-align: center; }
     .main section .tablaTercero {
       width: 600px;
-      height: 200px; }
+      height: auto; }
       .main section .tablaTercero th {
+        height: 50px;
         width: 200px;
         text-align: center;
         background-color: rgba(214, 214, 176, 0.71); }
       .main section .tablaTercero td {
+        height: 50px;
         text-align: center; }
     .main section .formulariot {
       padding: 30px 0;
       text-align: center; }
     .main section fieldset {
+      background-color: #e2e2e2;
       margin: auto;
       padding: 30px;
       line-height: 1.2rem; }
+      .main section fieldset legend {
+        text-align: center;
+        padding: 20px;
+        text-decoration: underline; }
       .main section fieldset div {
-        padding: 10px; }
+        padding: 15px; }
+        .main section fieldset div .boton {
+          padding: 5px; }
 
 .footer {
   width: 100%;

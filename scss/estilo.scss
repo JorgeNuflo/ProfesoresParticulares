@@ -1,4 +1,5 @@
-$colorp: linear-gradient(to top, grey, white);
+$colorPrincipal: linear-gradient(to top, grey, white);
+$colorFondo: rgba(238, 238, 238, 0.762);
 $colorMenu: rgb(226, 226, 226);
 $colorPrimero: beige;
 $colorSegundo: rgba(232, 232, 183, 0.859);
@@ -17,7 +18,7 @@ $colorTercero: rgba(214, 214, 176, 0.71);
 }
 
 .contenedor{
-    background-color: rgba(238, 238, 238, 0.762);
+    background-color: $colorFondo;
     width: 100%;
     height: 100vh;
     display: grid;
