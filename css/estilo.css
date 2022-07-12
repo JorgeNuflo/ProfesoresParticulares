@@ -60,6 +60,7 @@
     opacity: 1;
     transform: rotateX(0); } }
   .main section {
+    margin-top: 150px;
     margin: auto; }
     .main section .subtitulo {
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
